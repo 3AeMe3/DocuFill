@@ -13,11 +13,11 @@ Aplicación web inspirada en plataformas como Wonder Legal, enfocada en la creac
 
 ### Landing page
 
-![Landing page](./screenshots/home.png)
+![Landing page](/screenshots/home.png)
 
 ### Formulario + vista previa en tiempo real
 
-![Formulario y preview](./screenshots/form.png)
+![Formulario y preview](/screenshots/form.png)
 
 ---
 
