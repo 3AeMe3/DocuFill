@@ -1,9 +1,11 @@
 @import 'tailwindcss';
-
 :root {
   font-family: 'Inter', sans-serif;
 }
 
+body {
+  background-color: #f6f6f8;
+}
 .contract {
   font-family: 'Source Serif 4', serif;
 }

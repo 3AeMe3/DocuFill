@@ -116,9 +116,9 @@ export default function Form({
   }
 
   return (
-    <div className=" p-5 rounded-2xl">
+    <div className=" p-5 rounded-2xl h-full ">
       <form
-        className=" flex flex-col gap-3 "
+        className=" flex flex-col gap-3 justify-between h-full   "
         onSubmit={handleSubmit(onSubmit)}
         onKeyDown={(e) => {
           if (e.key === 'Enter' && !isLastStep) {

@@ -40,7 +40,7 @@ export default function ProgressBar({
             percentage === 100 ? 'text-green-500' : 'text-black/50'
           }`}
         >
-          COMPLETADO
+          {percentage !== 100 ? 'Cargando..' : 'Completado'}
         </p>
       </div>
 

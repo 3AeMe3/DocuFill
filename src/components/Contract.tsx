@@ -15,9 +15,9 @@ export default function Contract() {
   const [isSubmited, setIsSubmited] = useState(false)
 
   return (
-    <main className="bg-[#f6f6f8] min-h-screen w-full p-10  ">
-      <div className="mx-auto my-4 grid max-w-[75%] grid-cols-1 gap-5 lg:grid-cols-[0.5fr_1fr_0.5fr]">
-        <div className="bg-white h-60 min-h-60 shadow-xl  w-[90%] rounded-2xl border border-olive-300 ">
+    <main className="min-h-screen w-full p-10  ">
+      <div className="mx-auto my-4 grid max-w-[75%] grid-cols-1 gap-5 lg:grid-cols-[0.5fr_1fr_0.5fr] ">
+        <div className="bg-white h-60  shadow-xl  w-[90%] rounded-2xl border border-olive-300 ">
           <Form
             onTextChange={setTextForm}
             onActiveFieldChange={setActiveField}
@@ -27,7 +27,7 @@ export default function Contract() {
           />
         </div>
 
-        <div>
+        <div className="my-auto">
           <p className="font-semibold text-black/40">
             VISTA PREVIA EN TIEMPO REAL
           </p>
