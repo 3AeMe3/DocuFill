@@ -1,73 +1,124 @@
-# React + TypeScript + Vite
+# DocuFill
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación web inspirada en plataformas como Wonder Legal, enfocada en la creación guiada de documentos mediante formularios dinámicos, vista previa en tiempo real, barra de progreso y exportación a PDF.
 
-Currently, two official plugins are available:
+## Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Repositorio:** [GitHub](https://github.com/TU_USUARIO/TU_REPO)
+- **Deploy:** [Ver proyecto online](URL_DEMO)
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Vista previa
 
-## Expanding the ESLint configuration
+### Landing page
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+![Landing page](./screenshots/home.png)
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Formulario + vista previa en tiempo real
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+![Formulario y preview](./screenshots/form.png)
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Descripción
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+**DocuFill** es un proyecto desarrollado como práctica de frontend moderno con React.  
+La idea principal es ofrecer una experiencia parecida a la de un generador de documentos legales: el usuario completa un formulario paso a paso, visualiza cómo se construye el documento en tiempo real, ve su progreso y finalmente puede generar un PDF.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Este proyecto fue creado con fines educativos y de portfolio, con foco en:
+
+- manejo de formularios complejos
+- actualización de UI en tiempo real
+- organización del estado
+- experiencia de usuario
+- generación de documentos en PDF
+
+---
+
+## Características principales
+
+- Formulario guiado para completar información del documento
+- Vista previa del contrato en tiempo real mientras el usuario escribe
+- Barra / indicador de progreso del formulario
+- Generación y descarga de PDF
+- Interfaz limpia y enfocada en usabilidad
+- Navegación entre páginas con React Router
+- Estilizado moderno con Tailwind CSS
+
+---
+
+## Tecnologías utilizadas
+
+- **React 19**
+- **TypeScript**
+- **Vite**
+- **Tailwind CSS**
+- **React Hook Form**
+- **React Router**
+- **@react-pdf/renderer**
+
+---
+
+## Lo que aprendí con este proyecto
+
+Este proyecto me ayudó a practicar y entender mejor:
+
+- Cómo manejar formularios de forma más profesional con React Hook Form
+
+- Cómo reflejar cambios del formulario en otra parte de la interfaz en tiempo real
+
+- Cómo estructurar componentes para separar lógica, UI y generación de documento
+
+- Cómo generar archivos PDF desde una aplicación React
+
+- Cómo pensar en UX para procesos largos o guiados
+
+- Cómo construir un proyecto que se siente más cercano a un caso real de negocio
+
+---
+
+## Retos del proyecto
+
+Algunos de los principales desafíos fueron:
+
+- Sincronizar los datos del formulario con la vista previa en tiempo real
+
+- Mantener una estructura clara al trabajar con varias partes de la interfaz
+
+- Calcular y mostrar correctamente el progreso del usuario
+
+- Generar un PDF consistente a partir de la información ingresada
+
+- Diseñar una experiencia simple para algo que internamente tiene bastante lógica
+
+---
+
+## Posibles mejoras futuras
+
+- Soporte para más tipos de documentos
+
+- Validaciones más avanzadas por campo
+
+- Guardado automático de progreso
+
+- Multi-step form más robusto
+
+- Autenticación de usuarios
+
+- Historial de documentos generados
+
+- Personalización de plantillas
+
+- Backend para persistencia de datos
+
+- Internacionalización
+
+- Mejor diseño responsive para móviles
+
+---
+
+## **Nota importante**
+
+Este proyecto es una recreación inspirada en el flujo de herramientas de generación documental y fue desarrollado con fines educativos y de portfolio.
+No sustituye asesoría legal profesional ni debe considerarse una plataforma legal oficial.
