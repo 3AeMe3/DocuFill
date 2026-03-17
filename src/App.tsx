@@ -1,11 +1,11 @@
-import './App.css'
+import Contract from './components/Contract'
+import Navbar from './components/Navbar'
 
 function App() {
   return (
     <>
-      <div>
-        <h1>Hello world</h1>
-      </div>
+      <Navbar />
+      <Contract />
     </>
   )
 }

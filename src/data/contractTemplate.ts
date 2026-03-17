@@ -1,0 +1,18 @@
+export const contractSections = [
+  'CONTRATO DE ARRENDAMIENTO DE VIVIENDA',
+  'En {{ciudad}}, a {{fecha}}',
+  'REUNIDOS',
+  'De una parte,',
+  '{{arrendador_nombre}}, con {{arrendador_dni}} {{arrendador_dni_number}}, y con domicilio en: {{arrendador_domicilio}}.',
+  'En adelante, el "Arrendador".',
+  'Y de otra parte,',
+  '{{arrendatario_nombre}}, con {{arrendatario_dni}} {{arrendatario_dni_number}}, y con domicilio en: {{arrendatario_domicilio}}.',
+  'En adelante, el "Arrendatario".',
+  'Y que, a continuación, serán referidas, individualmente como la "Parte", y, de forma conjunta, como las "Partes". Las Partes, en la calidad con la que actúan, y reconociéndose capacidad jurídica para contratar y obligarse, y en especial para el otorgamiento del presente CONTRATO DE ARRENDAMIENTO DE VIVIENDA. En adelante, el "Contrato".',
+  'EXPONEN',
+  'I. Que el Arrendador es propietario de la vivienda ubicada en: {{arrendatario_domicilio}}, con la siguiente Referencia Catastral: {{referencia_catastral}}. La vivienda cuenta con {{metros_cuadrados}} metros cuadrados de superficie, y presenta las siguientes características: {{caracteristicas_vivienda}}.',
+  'En adelante, la "Vivienda".',
+  'Dicha superficie y composición, así como sus características y estado son perfectamente conocidas y aceptadas por las partes intervenidas en este contrato. No obstante, La Vivienda se arrienda como cuerpo cierto, así, de diferir la superficie real y la aquí descrita, esto no afectará de forma alguna a las condiciones y cláusulas que aquí se fijan, particularmente en lo relativo al precio de la renta',
+  'II. Que el Arrendador ha exhibido una copia del Certificado de Eficiencia Energética de la Vivienda de acuerdo con lo regulado en el Real Decreto 235/2013, de 5 de abril, por el que se aprueba el procedimiento basico para la certificación de la eficiencia energética de los edificios.',
+  'III. Que el Arrendatario desea arrendar la Vivienda para su uso personal de vivienda habitual, y el Arrendador está interesado en arrendársela, así convienen pactar, de forma expresa y detallada, la oferta y aceptación en arrendamiento de la misma, acordando expresamente otorgar el presente contrato de arrendamiento de vivienda que se rige por las siguientes',
+]
