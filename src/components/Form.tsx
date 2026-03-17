@@ -13,7 +13,7 @@ type FormValues = {
 
 type FormProps = {
   onTextChange: (answers: Answers) => void
-  onActiveFieldChange: (fieldId: QuestionId | null) => void
+  onActiveFieldChange: any
   indexQuestion: number
   onIndexQuestion: (prevIndex: number) => void
   onSubmited: (isSubmited: boolean) => void

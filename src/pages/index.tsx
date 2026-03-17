@@ -1,6 +1,5 @@
 import { Link } from 'react-router'
 import Card from '../components/home/Card'
-import folderSvg from '/svg/folder.svg'
 import Footer from '../components/home/Footer'
 
 export default function Home() {
@@ -25,7 +24,7 @@ export default function Home() {
             Comienza Ya!
           </Link>
         </div>
-        <div className="border rounded-2xl shadow-2xl border-white border-20 w-full h-20 max-w-3/6 min-h-3/4  mx-auto my-10 ">
+        <div className="border-20 rounded-2xl shadow-2xl border-white  w-full h-20 max-w-3/6 min-h-3/4  mx-auto my-10 ">
           <Link
             to={'/document'}
             className="justify-center flex items-center h-full flex-col opacity-40 gap-3"
