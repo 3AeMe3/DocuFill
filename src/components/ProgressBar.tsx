@@ -7,6 +7,7 @@ import DocumentPDF from '../pdf/DocumentPDF.tsx'
 type ProgressBarProps = {
   indexQuestion: number
   isSubmited: boolean
+  data: any
 }
 
 export default function ProgressBar({
